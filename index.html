@@ -15,17 +15,35 @@
   <button class="tablinks" onclick="openTab(event, 'Assets')">Assets</button>
   <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
 </div>
+<center>
+<!-- Pages -->
 
+<!-- Home Page -->
 <div id="Home" class="tabcontent">
 <h1><u><b>Welcome to the Blender Project Server</b></u></h1>
+<p>
 </div>
 
+<!-- Assets Page -->
 <div id="Assets" class="tabcontent">
-<h1>Assets</h1>
-<a href="Download/castle.blend" download>
-	<button class="btn" style="width:100%"><i class="fa fa-download"></i> Download Castle</button>
-</a>
 
+<input type="text" id="myInput" onkeyup="searchAssets()" placeholder="Search for Assets..">
+
+<ul id="myUL">
+  <li>
+  <h2><u>Castle Pack</u></h2>
+  <h3>Full Castle Asset Pack<h3>
+  	<a href="Download/castle.blend" download>
+  		<button class="btn" style="width:100%"><i class="fa fa-download"></i> Download Castle Assets</button>
+	</a>
+  </li>
+</ul>
 </div>
+
+<div id="Projects" class="tabcontent">
+<a href="button.html">Not A Virus</a>
+</div>
+
+</center>
 </body>
 </html>
